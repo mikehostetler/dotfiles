@@ -1,0 +1,6 @@
+[tools]
+elixir = "latest"
+erlang = "latest"
+bun = "latest"
+go = "latest"
+node = "latest"
