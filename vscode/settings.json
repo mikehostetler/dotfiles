@@ -1,0 +1,38 @@
+{
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.fontFamily": "JetBrains Mono, Menlo, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.6,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.rulers": [80, 120],
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.orientation": "vertical",
+  "editor.minimap.enabled": true,
+  "editor.smoothScrolling": true,
+  "extensions.recommendations": [
+    "zhuangtongfa.Material-theme",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "github.copilot",
+    "ms-vscode.remote-explorer",
+  ],
+  "workbench.panel.defaultLocation": "bottom",
+  "[github.copilot-chat]": {
+    "editor.defaultFormatter": null,
+  },
+  "chat.viewSessions.orientation": "stacked",
+  "amp.dangerouslyAllowAll": true,
+  "git.confirmSync": false,
+  "amp.mcpServers": {
+    "t": {
+      "url": "http://localhost:4000/tidewave/mcp",
+    },
+  },
+  "explorer.confirmDragAndDrop": false,
+}

@@ -1,0 +1,23 @@
+[user]
+	name = Mike Hostetler
+	email = 84222+mikehostetler@users.noreply.github.com
+	signingkey = 04DF1177C9454CE8
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = gpg
+
+[push]
+	default = current
+	autoSetupRemote = true
+
+[pull]
+	rebase = true
+
+[init]
+	defaultBranch = main
+
+[alias]
+	st = status

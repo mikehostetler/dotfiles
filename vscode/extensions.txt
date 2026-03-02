@@ -1,0 +1,7 @@
+zhuangtongfa.Material-theme
+pkief.material-icon-theme
+esbenp.prettier-vscode
+github.copilot
+eamodio.gitlens
+ms-python.python
+ms-vscode.remote-explorer

@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "zhuangtongfa.Material-theme",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "github.copilot",
+    "pkief.material-icon-theme",
+    "ms-vscode.remote-explorer",
+    "eamodio.gitlens"
+  ]
+}

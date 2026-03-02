@@ -1,0 +1,14 @@
+[
+  {
+    "key": "cmd+shift+p",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "cmd+k cmd+s",
+    "command": "workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "cmd+,",
+    "command": "workbench.action.openSettings"
+  }
+]
