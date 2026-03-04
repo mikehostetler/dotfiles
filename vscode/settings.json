@@ -35,4 +35,5 @@
     },
   },
   "explorer.confirmDragAndDrop": false,
+  "keyboard.dispatch": "keyCode",
 }
