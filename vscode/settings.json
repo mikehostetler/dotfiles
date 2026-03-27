@@ -36,4 +36,7 @@
   },
   "explorer.confirmDragAndDrop": false,
   "keyboard.dispatch": "keyCode",
+  "explorer.confirmDelete": false,
+  "git.autofetch": true,
+  "extensions.ignoreRecommendations": true,
 }
