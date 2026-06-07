@@ -26,7 +26,6 @@
   "[github.copilot-chat]": {
     "editor.defaultFormatter": null,
   },
-  "chat.viewSessions.orientation": "stacked",
   "amp.dangerouslyAllowAll": true,
   "git.confirmSync": false,
   "amp.mcpServers": {
@@ -39,4 +38,5 @@
   "explorer.confirmDelete": false,
   "git.autofetch": true,
   "extensions.ignoreRecommendations": true,
+  "chat.viewSessions.orientation": "stacked",
 }

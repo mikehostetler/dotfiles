@@ -4,3 +4,13 @@
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 
 export PATH="$HOME/.local/bin:$PATH"
+
+if [[ -z "${__MISE_ZSH_ACTIVATED:-}" ]]; then
+  if [[ -x /opt/homebrew/bin/mise ]]; then
+    eval "$(/opt/homebrew/bin/mise activate zsh)"
+    export __MISE_ZSH_ACTIVATED=1
+  elif command -v mise >/dev/null 2>&1; then
+    eval "$(mise activate zsh)"
+    export __MISE_ZSH_ACTIVATED=1
+  fi
+fi

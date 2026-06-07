@@ -70,7 +70,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git node vscode command-not-found web-search dotenv)
+plugins=(git node vscode command-not-found web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,8 +107,29 @@ set -o vi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cursor="code"
 
-# Activate mise
-eval "$(mise activate zsh)"
+# Activate mise in interactive shells too. Login/noninteractive shells
+# pick this up from ~/.zprofile.
+if [[ -z "${__MISE_ZSH_ACTIVATED:-}" ]]; then
+  if [[ -x /opt/homebrew/bin/mise ]]; then
+    eval "$(/opt/homebrew/bin/mise activate zsh)"
+    export __MISE_ZSH_ACTIVATED=1
+  elif command -v mise >/dev/null 2>&1; then
+    eval "$(mise activate zsh)"
+    export __MISE_ZSH_ACTIVATED=1
+  fi
+fi
 
 # Git GPG configuration
 export GPG_TTY=$(tty)
+
+# Codex App helpers - two separate instances with different home directories
+# Codex 1 (system /Applications)
+alias codex1="CODEX_HOME=~/.codex open /Applications/Codex.app"
+alias codex1-cli="CODEX_HOME=~/.codex"
+
+# Codex 2 (~/Applications)
+alias codex2="CODEX_HOME=~/.codex-2 open ~/Applications/Codex.app"
+alias codex2-cli="CODEX_HOME=~/.codex-2"
+
+# opencode
+export PATH=/Users/mhostetler/.opencode/bin:$PATH
