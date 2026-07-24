@@ -14,3 +14,6 @@ if [[ -z "${__MISE_ZSH_ACTIVATED:-}" ]]; then
     export __MISE_ZSH_ACTIVATED=1
   fi
 fi
+
+# Ensure mise shims take priority over Homebrew's node (which other brew packages depend on)
+export PATH="$HOME/.local/share/mise/shims:$PATH"
