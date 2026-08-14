@@ -39,4 +39,5 @@
   "git.autofetch": true,
   "extensions.ignoreRecommendations": true,
   "chat.viewSessions.orientation": "stacked",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
 }
